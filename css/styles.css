@@ -52,3 +52,38 @@ footer {
       width: 28%;
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 799px){  
+  header {
+    height: 30%;
+    background-color: #00CCFF;
+  }
+
+
+#column-1 {
+  font-size: 18px;
+  padding: 10%;
+  border: 5px solid #00CCFF; 
+  background-color: #757de8;
+}
+
+#column-2 {
+  font-size: 18px;
+  padding: 10%;
+  border: 5px solid #00CCFF; 
+  background-color: #3f51b5;
+}
+
+#column-3 {
+  font-size: 18px;
+  padding: 10%;
+  border: 5px solid #00CCFF; 
+  background-color: #757de8;
+}
+
+  footer {
+    height: 30%;
+    margin-top: auto;
+    background-color: #00CCFF;
+  }
+}
