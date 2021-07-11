@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #999;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background-color: #002984;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+button {
+  padding: 1rem;
+  background-color: #999;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-prinary {
+  background-color: #002984;
+  color: white;
+}
+
+.column {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+}   
+
+#column-1 {
+  background-color: #757de8;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+#column-2 {
+  background-color: #3f51b5;
+}
+
+#column-3 {
+  background-color: #757de8;
+}
+
+footer {
+  background-color: #002984;
+}
+
+/* navigation menu */
+#nav-menu {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#nav-menu li {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#nav-menu li a {
+  padding: 6px 12px;
+  border-bottom: 2px solid red;
+  width: 100%;
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  background-color: #757de8;
+}   
+
+#nav-menu li a:hover {
+  border-bottom-color: chartreuse;
+  background-color: #3f51b5;
+}
+
+#amanda-container {
+  display: block;
+  margin-left: auto;
+}
+
+/* Descxktop view */
+@media screen and (min-width: 800px) {
+  main {
+      flex-direction: row;
+  }
+
+  .column {
+      width: 28%;
+  }
+
+  /* navigation menu */
+  #nav-menu {
+      display: flex;
+      flex-direction: row;
+  }
+
+  #nav-menu li a {
+      max-width: 200px;
+  }
+
+  #amanda-container {
+      display: none;
+  }
+}
